@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="menu">
+        <div class="presentacion">
+            <img src="/iconos/Simple Minimalist Real Estate Logo (1).png" class="logo-presentacion" alt="">
+            <div class="contactos">
+                <img src="/iconos/simbolo-de-la-aplicacion-de-facebook (1).png" id="face" class="logo-redes" alt="">
+                <img src="/iconos/instagram.png" class="logo-redes" alt="">
+                <img src="/iconos/whatsapp (1).png" class="logo-redes" alt="">
+            </div>
+        </div>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li class="link">
+                    <a href="" class="item">Buscar</a>
+                </li>
+                <li class="link">
+                    <a href="" class="item">Inmuebles</a>
+                </li>
+                <li class="link">
+                    <a href="" class="item">Sobre Nosotros</a>
+                </li>
+                <li class="link">
+                    <a href="" class="item contactanos">Contactanos
+                        
+                    </a>
+                </li>
+                <li class="link">
+                    <a href="https://www.facebook.com/" class="item">Contactos</a>
+                </li>
+                <li class="link">
+                    <a href="/proyecto navbar/codig nuevo/index.html" class="item">Ingresar</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="primera-parte">
+        <div class="busqueda">
+            <input type="text" class="input-text" placeholder="Ingrese palabras clave de inmuebles">
+            <button class="btn">
+                <span class="btn-texto">buscar</span>
+                </div>
+                    
+            </button>
+            
+        </div>
+
+    </section>
+    
+    <section class="segunda-parte">
+        <div class="desplegable"> 
+            <button class="btnF">Filtro</button>
+            <div class="filtrex-busqueda">
+                <img src="/iconos/menu-hamburguesa (1).png" alt="filtrex">
+            </div>
+            <div class="filtros">
+                <a href="#" id="categoryItems" category="Mayor">Mayor Precio</a>
+                <a href="#">Menor Precio</a>
+                <a href="#">Más Cercanos</a>
+            </div>
+            <div class="solotextodeinmueble">
+                <button class="solotexto">Inmuebles</button>
+            </div>
+        </div>
+    
+        <div class="container">
+            <div class="slide">
+                <ul>
+                    <li>
+                        <img src="/imagenes/departamento_movible11.jpg" class="img11">
+                    </li>
+                    <li>
+                        <img src="/imagenes/departamento_movible22.jpg" class="img22" alt="">
+                    </li>
+                    <li>
+                        <img src="/imagenes/departamento_movible33.jpg" class="img33" alt="">
+                    </li>
+                    <li>
+                        <img src="/imagenes/departamento_movible44.jpg" class="img44" alt=""> 
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="cuartaparte">
+        <div id="wrapper">
+            <h2>Envía tu formulario</h2>
+            <form class="caja-input" action="tu_archivo_de_procesamiento.php" method="post">
+                 <label for="nombre">Nombre</label>
+                 <input type="text" name="nombre" id="nombre">
+
+                 <label for="email">Correo Electrónico</label>
+                 <input type="email" name="email" id="email">
+
+                 <label for="subject">Asunto</label>
+                 <input type="text" name="subject" id="subject">
+
+                 <label for="comments">Comentarios</label>
+                 <textarea name="comments" id="comments" cols="15" rows="5"></textarea>
+
+                 <input type="submit" value="Enviar">
+              </form>
+        </div>
+    </section>
+
+</body>
+</html>
