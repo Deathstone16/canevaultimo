@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+.body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #D3D9E9;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+    
+.menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-area: 1 / 1 / 2 / 9;
+    background-color: #796EA8;
+    height: 90px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+#face{
+    height: 37px;
+    width: auto;
+    padding-right: 0px;
+    padding-bottom: 2px;
+}
+
+.presentacion {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+}
+
+.contactos{
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.logo-redes{
+    font-size: 25px;
+    height: 40px;
+    width: auto;
+    padding-right: 5px;
+    
+}  
+
+.logo-presentacion{
+    height: 110px;
+    width: auto;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+  
+.nav-links {
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+    list-style: none;
+    gap: 5px;
+}
+
+
+
+.item {
+    color: #D3D9E9;
+    padding: 3px 20px; 
+    border: 2px solid;
+    border-radius: 10px;
+    white-space: nowrap; 
+}
+  
+.item + .item {
+    margin-left: 10px;
+}
+
+
+
+
+.buscardores {
+    grid-area: 2 / 1 / 3 / 9;
+}
+
+.buscando {
+    grid-area: 2 / 3 / 3 / 7;
+}
+
+.filtros2 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.botonbuscar {
+    grid-area: 2 / 8 / 3 / 9;
+}
+
+.solotextodeinmueble {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    grid-area: 4 / 3 / 7 / 7;
+}
+
+.slide{
+    width: 200%;
+    max-width: 1000px;
+    height: 800px;
+    overflow: hidden;
+    border-radius: 90px;
+  }
+
+.slide ul{
+    display: flex;
+    padding: -10px;
+    width: 400%;
+    animation: slide 15s infinite cubic-bezier(0.55, 0.48, 0.37, 0.92);
+}
