@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/estilos.css">
+    
 </head>
 <body>
     <div class="menu">
@@ -45,37 +48,162 @@
     
     </div>
     <div class="buscardores">
-        <div class="filtros2">
-           <input type="text" placeholder="filtros">
-        </div>
-        <div class="buscando">
-               <input type="text" placeholder="Buscar">
-        </div>
-        <div class="botonbuscar">
-              <button>Buscar</button>
+        
+        <div class="ingresos">
+            <div class="buscando">
+                <input type="text" placeholder="Buscar">
+            </div>
+            <div class="botonbuscar">
+                <button>Buscar</button>
+            </div>
         </div>
     </div>
     
-    </div>
-    <div class="solotextodeinmueble">
-        <button class="solotexto">Inmuebles</button>
-    </div>
-    <div class="container">
-        <div class="slide">
-            <ul>
-                <li>
-                    <img src="/imagenes/departamento_movible11.jpg" class="img11">
-                </li>
-                <li>
-                    <img src="/imagenes/departamento_movible22.jpg" class="img22" alt="">
-                </li>
-                <li>
-                    <img src="/imagenes/departamento_movible33.jpg" class="img33" alt="">
-                </li>
-                <li>
-                    <img src="/imagenes/departamento_movible44.jpg" class="img44" alt=""> 
-                </li>
+  
+    <div class="filtros2">
+        <nav class="sub_menu_hambur">
+            <a href="">Filtros</a>
+            <ul class="submenu">
+            <li><a href="#">zona</a></li>
+            <li><a href="#">tipo</a></li>
+            <li><a href="#">ambientes</a></li>
             </ul>
+        </nav>
+        
+    </div>
+    <div class="contenedor">
+        <div class="slider1">
+            <div class="swiffy-slider slider-item-ratio slider-item-ratio-16x9 slider-nav-animation slider-nav-animation-fadein" id="swiffy-animation">
+                <ul class="slider-container">
+                    <li><img src="/imagenes/departamento_movible11.jpg" loading="lazy" alt="..."></li>
+                    <li><img src="/imagenes/departamento_movible22.jpg" loading="lazy" alt="..."></li>
+                    <li><img src="/imagenes/departamento_movible33.jpg" loading="lazy" alt="..."></li>
+                    <li><img src="/imagenes/departamento_movible44.jpg" loading="lazy" alt="..."></li>
+                </ul>
+            
+                <button type="button" class="slider-nav" aria-label="Go left"></button>
+                <button type="button" class="slider-nav slider-nav-next" aria-label="Go left"></button>
+            
+                <div class="slider-indicators slider-indicators-square d-none d-md-flex">
+                    <button class="" aria-label="Go to slide"></button>
+                    <button aria-label="Go to slide"></button>
+                    <button aria-label="Go to slide" class="active"></button>
+                    <button aria-label="Go to slide"></button>
+                </div>
+            
+                <div class="slider-indicators slider-indicators-sm slider-indicators-dark slider-indicators-round d-md-none slider-indicators-highlight">
+                    <button class="" aria-label="Go to slide"></button>
+                    <button aria-label="Go to slide"></button>
+                    <button aria-label="Go to slide" class="active"></button>
+                    <button aria-label="Go to slide"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="titulo1">
+        <h2>Inmuebles</h2>
+    </div>
+    <div class="containerss">
+        <div class="cards">
+            <figure>
+                <img src="/imagenes/cards11.jpg">
+            </figure>
+            <div class="contenido">
+                <h3>Inmueble</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolorum, porro saepe illo dolores eos provident asperiores repudiandae vero quas? Quo et deserunt atque magni suscipit? Dolor delectus earum fuga.</p>
+                <a href="#">Contactar</a>
+            </div>
+        </div>
+        <div class="cards">
+            <figure>
+                <img src="/imagenes/cards22.jpg">
+            </figure>
+            <div class="contenido">
+                <h3>Inmueble</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolorum, porro saepe illo dolores eos provident asperiores repudiandae vero quas? Quo et deserunt atque magni suscipit? Dolor delectus earum fuga.</p>
+                <a href="#">Contactar</a>
+            </div>
+        </div>
+        <div class="cards">
+            <figure>
+                <img src="/imagenes/cards33.jpg">
+            </figure>
+            <div class="contenido">
+                <h3>Inmueble</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolorum, porro saepe illo dolores eos provident asperiores repudiandae vero quas? Quo et deserunt atque magni suscipit? Dolor delectus earum fuga.</p>
+                <a href="#">Contactar</a>
+            </div>
+        </div>
+        <div class="cards">
+            <figure>
+                <img src="/imagenes/cards44.jpg">
+            </figure>
+            <div class="contenido">
+                <h3>Inmueble</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolorum, porro saepe illo dolores eos provident asperiores repudiandae vero quas? Quo et deserunt atque magni suscipit? Dolor delectus earum fuga.</p>
+                <a href="#">Contactar</a>
+            </div>
+        </div>
+        <div class="cards">
+            <figure>
+                <img src="/imagenes/cards55.jpg">
+            </figure>
+            <div class="contenido">
+                <h3>Inmueble</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolorum, porro saepe illo dolores eos provident asperiores repudiandae vero quas? Quo et deserunt atque magni suscipit? Dolor delectus earum fuga.</p>
+                <a href="#">Contactar</a>
+            </div>
+        </div>
+    </div>
+    <div class="about">
+        <img src="/imagenes/logo ejemp.jpg" class="img-about">
+        <div class="texto-about"> 
+            <h3 class="titulo2">Sobre nosotros</h3>
+            <p>Somos un grupo familiar que aspira a construir y
+                desarrollar el espacio para el crecimiento de la comunidad
+                local dando la mejor respuesta a las necesidades e
+                inquietudes de nuestros clientes; asesorando en la
+                compraventa y administración de inmuebles en su aspecto
+                físico, jurídico y financiero.</p>
+        </div>
+    </div>
+    <div class="formulario-padre">
+        <h2 class="contactarse">Contactanos</h2>
+        <div class="fondo_form">
+            <div class="formulax">
+                <h2 class="Envieformi">Envie su formulario</h2>
+                <div class="felx-conteiner">
+                    <form class="form_mensaje" action="https://formsubmit.co/leonelformoselle@gmail.com" method="POST">
+                        <label for="Nombre">Nombre</label>
+                        <input type="text" name="name">
+
+                        <label for="email">Email</label>
+                        <input type="text" name="email">
+
+                        <label for="subject">Asuntos</label>
+                        <input type="text" name="subject">
+
+                        <label for="comments">Comentario</label>
+                        <textarea name="comments" cols="15" rows="5"></textarea>
+
+                        <input class="mensaje_mail" type="submit" value="Enviar">
+                    </form>
+                    
+                </div>
+            </div>
+            <div class="contacto-info">
+                <div class="infocontact">
+                    <ul>
+                        <li><img class="icono-form" src="/iconos/llamada-telefonica (1).png" alt="">canevahnos@gmai.com</li>
+                        <li><img class="icono-form" src="/iconos/whatsapp (1).png" alt="">3624-452568</li>
+                        <li><img class="icono-form" src="/iconos/ajustes.png" alt="">Av.Alverdi 244</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3985.663716418136!2d-58.986633287900275!3d-27.451338191097964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1698318361319!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
         </div>
     </div>
 </body>
