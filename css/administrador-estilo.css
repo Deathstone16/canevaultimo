@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+body{
+background-color: #D3D9E9;
+}
+
+.menu{
+    background-color: #796EA8;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    z-index: 1000;
+}
+
+.presentacion{
+    display: flex;
+    justify-content: start;
+    width: 25%;
+    height: 100%;
+    align-items: center;
+    background-color: #796EA8;
+
+}
+
+.logo-presentacion{
+    width: auto;
+    height: 100%;
+    background-color: #796EA8;
+}
+
+.contactos{
+    background-color: #796EA8;
+}
+
+.logo-redes{
+    width: 2rem;
+    height: 2rem;
+    background-color: #796EA8;
+}
+
+.navbar{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    
+}
+
+.nav-links{
+    display: flex;
+    gap: 0.5rem;
+    padding-right: 1rem;
+    background-color: #796EA8;
+}
+
+.nav-links li{
+    background-color: #796EA8;
+}
+
+.link a{
+
+    color: #D3D9E9;
+    padding: 3px 20px;
+    border: 2px solid;
+    border-radius: 10px;
+    white-space: nowrap;
+    transition: all 0.5s;
+    background-color: #796EA8;
+}
+
+.link a:hover{
+    background-color: #D3D9E9;
+    color: #796EA8;
+    border: none;
+}
+
+#submenu2{
+    position: relative;
+}
+
+.submenu {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    text-align: start;
+    background-color: #796EA8;
+    border: none;
+    width: 130px;
+    height: auto;
+    margin-top: 20px;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 10;
+    transition: all 1s;
+}
+
+/*barra de herramientas*/
+
+.barra-opciones{
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-left: 50px;
+
+}
+
+.barra-opciones h3{
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    color: #796EA8;
+}
+
+.botones{
+    display: flex;
+    gap: 10px;
+}
+
+.botones button{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    background-color: #796EA8;
+    border: none;
+    border-radius: 45px;
+    padding-right: 8px;
+    height: 30px;
+}
+
+.botones button img{
+    height: 25px;
+    width: auto;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.botones button p{
+    margin-right: 3px;
+    color: #D3D9E9;
+}

@@ -9,6 +9,8 @@
 
 }
 
+
+
 body{
 background-color: #D3D9E9;
 }
@@ -254,27 +256,51 @@ background-color: #D3D9E9;
     margin-bottom: 100px;
 }
 
-/* cards */
+/*titulo inmbuebles*/
 
-.titulo1 h2{
-    font-size: 17px;
-    color: #D3D9E9;
+.titulo1 {
     background-color: #796EA8;
-    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: fit-content;
+    padding: 0px 5px;
     margin-left: 20px;
-    margin-bottom: 40px;
+
 }
 
-.containerss{
-    width: 100%;
-    margin-left: 0px;
-    display: flex;
-    max-width: 2000px;
-  
+/*slider de departamentos*/
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  display:flex;
 }
-.cards{
-    width: 100%;
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 760px) {
+  .swiper-button-next {
+    right: 20px;
+    transform: rotate(90deg);
+  }
+
+  .swiper-button-prev {
+    left: 20px;
+    transform: rotate(90deg);
+  }
+}
+
+.card{
+    position: relative;
+    width:400px;
     margin:10px ;
     border-radius: 10px;
     overflow: hidden;
@@ -282,48 +308,60 @@ background-color: #D3D9E9;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
     cursor: default;
     transition: all 400ms ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-  
-.cards:hover{
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-    transform: translateY(-3%);
-}
-  
-.cards img{
-    width: 100%;
-    height: 210px;
-  
-  
-}
-  
-.cards .contenido{
+
+.card-content{
     padding: 15px;
     text-align: center;
-  
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
-  
-.cards .contenido p{
+
+.card-image{
+    padding: 15px;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+}
+
+.card-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.card-text p{
     line-height: 1.5;
     color: #000000;
+    margin: 0%;
+
 }
   
-.cards .contenido h3{
+.card-text h3{
     font-weight: 400;
-    margin-bottom: 15px;
+    margin: 0%;
 }
   
-.cards .contenido a{
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px;
-    margin-top: 10px;
-    color: #D3D9E9;
-    border: 1px solid #000000;
-    border: 4px;
-    transition: all 400ms ease;
-}
+
   
-.cards .contenido a:hover{
+.card-content a:hover{
     background: #554D74;
     color: #D3D9E9;
 }
@@ -366,11 +404,13 @@ background-color: #D3D9E9;
 
 .formulario-padre{
     background-image: url(/imagenes/departamento-piloto.png);   
-   * background-repeat: no-repeat;
+    background-repeat : no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-size: cover;
+    background-position: center;
 }
 
 .fondo_form{
@@ -385,6 +425,7 @@ background-color: #D3D9E9;
     gap: 30px;
     margin-bottom: 30px;
 
+
 }
 .formulax{
     display: flex;
@@ -392,8 +433,7 @@ background-color: #D3D9E9;
 
 }
 
-.mapa{
-}
+
 .icono-form{
     width: 30px;
     height: auto;
