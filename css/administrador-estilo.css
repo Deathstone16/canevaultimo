@@ -105,6 +105,14 @@ background-color: #D3D9E9;
     opacity: 0;
     z-index: 10;
     transition: all 1s;
+    display: none;
+}
+
+.submenu:hover{
+    visibility: hidden;
+    z-index: 10;
+    opacity: 1;
+    display: block;
 }
 
 /*barra de herramientas*/
