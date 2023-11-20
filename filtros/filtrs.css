@@ -1,0 +1,11 @@
+#Zona:checked ~ #imagenes .comodo, #Zona:checked ~ #imagenes .movil{
+    display: none;
+}
+
+#comodo:checked ~ #imagenes .zona , #comodo:checked ~ #imagenes .lejano{
+    display: none;
+}
+
+#lejano:checked ~ #imagenes .comodo, #lejano:checked ~ #imagenes .zona{
+    display: none;
+}
