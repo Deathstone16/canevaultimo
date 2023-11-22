@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -54,8 +56,34 @@
             </button>
         </div>
     </div>
+    <div class="crud">
+        <div class="ingreso">
+        <input type="text" name="caja[]" id="aula"> AULA <br />
+        <input type="text" name="caja[]"> EQUIPO <br />
+        <input type="text" name="caja[]"> MOTIVO <br />
+        <br />
+        <input type="button" value="Insertar" onclick="insertarTabla()">
+        <br /><br />
+        </div>
+        <div class="muestra">
+        <table border="1" cellspacing="0" style="border-collapse: collapse;">
+        <tr>
+            <th>AULA</th>
+            <th>EQUIPO</th>
+            <th>MOTIVO</th>
+        </tr>
+        <tbody id="miTabla">
+        </tbody>
+        </table>
+        <br />
+        <button onclick="cuantasFilas()">Consultar incidencias</button>
+        <p id="demo"></p>
+        <p id="demo2"></p>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/administrador/administradorcrud.js"></script>
     
 </body>
 </html>
