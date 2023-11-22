@@ -133,10 +133,14 @@ background-color: #D3D9E9;
     transition: visibility 0s, opacity 0.5s;
 }
 
-/* .link:hover ul{
+.link:hover ul{
     visibility: visible;
     opacity: 1;
-} */
+}
+
+.link-herramienta-a{
+    border: none;
+}
 
 /*barra de busqueda*/
 
