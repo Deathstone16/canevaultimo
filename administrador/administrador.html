@@ -58,25 +58,32 @@
     </div>
     <div class="crud">
         <div class="ingreso">
-        <input type="text" name="caja[]" id="aula"> AULA <br />
-        <input type="text" name="caja[]"> EQUIPO <br />
-        <input type="text" name="caja[]"> MOTIVO <br />
+        <input type="text" name="caja[]" id="aula"> Nombre <br />
+        <input type="text" name="caja[]"> Apellido <br />
+        <input type="text" name="caja[]"> Sexo <br />
+        <input type="text" name="caja[]"> DNI <br />
+        <input type="text" name="caja[]"> Fecha de ingreso <br />
+        <input type="text" name="caja[]"> Nombre de inmueble (Direccion) <br />
         <br />
-        <input type="button" value="Insertar" onclick="insertarTabla()">
+        <input class="admin-boton" type="button" value="Insertar" onclick="insertarTabla()">
         <br /><br />
         </div>
         <div class="muestra">
         <table border="1" cellspacing="0" style="border-collapse: collapse;">
         <tr>
-            <th>AULA</th>
-            <th>EQUIPO</th>
-            <th>MOTIVO</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Sexo</th>
+            <th>DNI</th>
+            <th>Fecha de ingreo</th>
+            <th>Nombre de Inmueble (Direccion)</th>
+            
         </tr>
         <tbody id="miTabla">
         </tbody>
         </table>
         <br />
-        <button onclick="cuantasFilas()">Consultar incidencias</button>
+        <button class="admin-boton-2" onclick="cuantasFilas()">Consultar incidencias</button>
         <p id="demo"></p>
         <p id="demo2"></p>
         </div>
